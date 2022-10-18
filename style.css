@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+  --fontSize: 28px;
+  --fontWeight: 800;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--darkBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 500px;
+  background-color: var(--darkGrayishBlue);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--lightCyan);
+}
+
+h5 {
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  font-weight: var(--fontWeight);
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: 5px;
+}
+
+h3 {
+  text-align: center;
+  display: block;
+}
+
+.dice {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: -65px;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5px var(--neonGreen);
+}
+
+h5,
+h3,
+.divider {
+  margin-bottom: 20px;
+}
+
+span {
+  font-family: "Epilogue", sans-serif;
+  color: var(--lightCyan);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+#advice-num {
+  color: var(--neonGreen);
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: var(--lightCyan);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 550px) {
+  .content {
+    margin: 30px;
+  }
+  #desktop-divider {
+    display: none;
+  }
+  #mobile-divider {
+    display: block;
+  }
+}
